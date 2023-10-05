@@ -24,4 +24,6 @@
     count = 0;
     updateCount();
   });
+
+  updateCount();
 })();

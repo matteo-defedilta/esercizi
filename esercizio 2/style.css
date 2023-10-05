@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #1f2123;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  background-color: #426971;
+  margin: 0 auto;
+}
+
+.count {
+  width: 50px;
+}
+
+.reset-container {
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+}

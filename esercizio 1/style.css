@@ -10,6 +10,15 @@ body {
   background-color: #1f2123;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 header {
   width: 100%;
   text-align: center;
