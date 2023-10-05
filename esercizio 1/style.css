@@ -1,0 +1,16 @@
+header{
+    width: 100%;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.count{
+    width: 50px;
+}
+.reset-container{
+    text-align: center;
+    padding-top: 10px;
+}
