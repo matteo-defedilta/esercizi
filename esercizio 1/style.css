@@ -1,21 +1,38 @@
-*,::before
-,::after{
-    box-sizing: border-box;
-} 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 
-header{
-    width: 100%;
-    text-align: center;
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #1f2123;
 }
-.container{
-    width: 100%;
-    text-align: center;
-    padding-top: 50px;
+
+header {
+  width: 100%;
+  text-align: center;
 }
-.count{
-    width: 50px;
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  background-color: #426971;
+  margin: 0 auto;
 }
-.reset-container{
-    text-align: center;
-    padding-top: 10px;
+
+.count {
+  width: 50px;
+}
+
+.reset-container {
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
 }
