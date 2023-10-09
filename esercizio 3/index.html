@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esercizio 3 (counter)</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Esercizio 3 (counter)</h1>
+  </header>
+  <button id="addCounter">+ Add Counter</button>
+  <input id="inputCounter" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+  <button id="removeCounter">- Remove Counter</button>
+  <div id="countersContainer"></div>
+
+
+</body>
+
+</html>
