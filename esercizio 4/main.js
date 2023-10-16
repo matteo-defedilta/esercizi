@@ -40,9 +40,9 @@ function MainCounter() {
 
   React.useEffect(() => {
     const inputCounter = document.querySelector('.inputCounter');
-    inputCounter.addEventListener('change', (value) => {
+    const handleInputChange = (ev) => {
       console.log('dentro il change');
-      let currentCount = value.target.value;
+      let currentCount = ev.target.value;
       if (currentCount < stateRef.current.length) {
         stateRef.current.forEach((element, index) => {
           if (index >= currentCount) {
@@ -60,7 +60,14 @@ function MainCounter() {
           //incrementCount();
         }
       }
-    });
+    };
+
+    inputCounter.addEventListener('change', handleInputChange);
+
+    return () => {
+      // Remove the event listener when the component is unmounted.
+      inputCounter.removeEventListener('change', handleInputChange);
+    };
   }, [mainCount]);
 
   return React.createElement(
